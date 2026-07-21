@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href=" {{ url_for('static', filename='css/styles.css') }} ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geomini:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+
+        <div class="div-titulo-pati">
+
+            <a class="div-titulo">
+                <h2 class="titulo">Quedo</h2>
+                <h2 class="titulo">Como</h2>
+                <h2 class="titulo">Nuevo</h2>
+            </a>
+
+            <div class="div-pati">
+                <input type="checkbox" name="" id="menu-toggler">
+                <label class="btn-pati" for="menu-toggler" type="button">☰</label>
+
+                <nav class="menu">
+                    <ul><a href="" class="a-menu-pati">Inicio</a></ul>
+                    <ul><a href="" class="a-menu-pati">Informacion</a></ul>
+                    <ul><a href="" class="a-menu-pati">Trabajos</a></ul>
+                    <ul><a href="" class="a-menu-pati">Contactame</a></ul>
+                </nav>
+            </div>
+
+        </div>
+
+        <div class="div-img">
+            <img class="img-logo" src="{{ url_for('static', filename='img/logo-00.png') }}" alt="">
+        </div>
+
+        <div class="div-arreglo">
+        </div>
+
+    </header>
+</body>
+</html>
