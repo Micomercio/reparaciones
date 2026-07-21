@@ -9,6 +9,7 @@
     --color-principal-00: rgb(176, 94, 252) ;
     --color-secundario: rgb(230, 192, 255);
     --color-principal-01:  rgba(199, 140, 255, .9);
+    --letra-body:  rgb(22, 22, 22);
 }
 
 
@@ -171,6 +172,7 @@
 .a-direccion{
     text-decoration: none;
     font-size: .8rem;
+    color: var(--letra-body);
 }
 
 @media (max-width: 900px) and (orientation: landscape) {
