@@ -25,7 +25,7 @@
                 <label class="btn-pati" for="menu-toggler" type="button">☰</label>
 
                 <nav class="menu">
-                    <ul><a href="" class="a-menu-pati">Inicio</a></ul>
+                    <ul><a href="/" class="a-menu-pati">Inicio</a></ul>
                     <ul><a href="" class="a-menu-pati">Informacion</a></ul>
                     <ul><a href="" class="a-menu-pati">Trabajos</a></ul>
                     <ul><a href="" class="a-menu-pati">Contactame</a></ul>
@@ -34,7 +34,7 @@
 
         </div>
 
-        <div class="div-img">
+        <div class="div-img-logo">
 
             <img class="img-logo" src="{{ url_for('static', filename='img/logo-00.png') }}" alt="">
             <span class="span-00"></span>
@@ -44,19 +44,60 @@
 
         </div>
 
-        <div class="div-arreglo">
+        <div class="div-arreglo"></div>
+
+    </header>
+
+    <main>
+        <section class="section-aparatos">
+            <h1 class="h1-oportunidad">¡Dale otra oportunidad!</h1>
+            <div class="div-img-aparatos">
+                <img class="img-aparatos" src="{{ url_for('static', filename='img/aparatos.png') }}" alt="">
+            </div>
+            <div class="div-descripcion-00">
+                <h2>¿Tu electrodoméstico dejó de funcionar? ¡No lo tires! 🛠️
+                Me dedico a la reparación y mantenimiento de pequeños y 
+                medianos electrodomésticos</h2>
+            </div>
+        </section>
+
+        <section class="section-pc">
+            <div class="div-h1-pc">
+                <h1 class="h1-pc">PC y Laptop</h1>
+            </div>
+            <div class="div-img-pc">
+                <img class="img-pc" src="{{ url_for('static', filename='img/pc.png') }}" alt="Imagenes de computadoras">
+            </div>
+            <div class="div-descripcion-01">
+                <h2>Reparación y mantenimiento, de 
+                    escritorio y portátiles. Instalación y 
+                    de sistemas operativos, recuperación de datos,
+                    mantenimiento físico.</h2>
+            </div>
+        </section>
+        
+
+        <section class="section-contacto">
+             <div class="div-me-puedes">
+                <h2 class="h2-me-puedes">
+                    Me puedes encontrar aqui
+                </h2>
+            </div>
             <div class="div-ubicacion">
-                <div class="div-img-ubicacion">
-                    <img aria-colspan="img-ubicacion" src="{{ url_for('static', filename='img/ubicacion.png') }}" alt="" class="img-ubicacion">
-                </div>
+                <a class="div-img-ubicacion" href="https://www.google.com/maps/place/Mariano+de+Vedia+y+Mitre+10231,+B1736ELI+Trujui,+Provincia+de+Buenos+Aires/@-34.5840521,-58.759809,17z/data=!4m15!1m8!3m7!1s0x95bc97470157d00d:0x2d0c08bf84ba2a35!2sMariano+de+Vedia+y+Mitre+10231,+B1736ELI+Trujui,+Provincia+de+Buenos+Aires!3b1!8m2!3d-34.5841243!4d-58.7596783!16s%2Fg%2F11np36y_xc!3m5!1s0x95bc97470157d00d:0x2d0c08bf84ba2a35!8m2!3d-34.5841243!4d-58.7596783!16s%2Fg%2F11np36y_xc?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D">
+                    <img aria-colspan="img-ubicacion"  src="{{ url_for('static', filename='img/ubicacion.png') }}" alt="" class="img-ubicacion">
+                </a>
                 <div class="div-direccion">
-                    <a class="a-direccion" href="https://www.google.com/maps/place/Mariano+de+Vedia+y+Mitre+10231,+B1736ELI+Trujui,+Provincia+de+Buenos+Aires/@-34.5840521,-58.759809,17z/data=!4m15!1m8!3m7!1s0x95bc97470157d00d:0x2d0c08bf84ba2a35!2sMariano+de+Vedia+y+Mitre+10231,+B1736ELI+Trujui,+Provincia+de+Buenos+Aires!3b1!8m2!3d-34.5841243!4d-58.7596783!16s%2Fg%2F11np36y_xc!3m5!1s0x95bc97470157d00d:0x2d0c08bf84ba2a35!8m2!3d-34.5841243!4d-58.7596783!16s%2Fg%2F11np36y_xc?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D">
-                        <h3 class="h3-direccion">Villa Nueva, Trujuy, Moreno, Buenos Aires 😎</h3>
+                    <a class="a-direccion" id="ubicacion" href="https://www.google.com/maps/place/Mariano+de+Vedia+y+Mitre+10231,+B1736ELI+Trujui,+Provincia+de+Buenos+Aires/@-34.5840521,-58.759809,17z/data=!4m15!1m8!3m7!1s0x95bc97470157d00d:0x2d0c08bf84ba2a35!2sMariano+de+Vedia+y+Mitre+10231,+B1736ELI+Trujui,+Provincia+de+Buenos+Aires!3b1!8m2!3d-34.5841243!4d-58.7596783!16s%2Fg%2F11np36y_xc!3m5!1s0x95bc97470157d00d:0x2d0c08bf84ba2a35!8m2!3d-34.5841243!4d-58.7596783!16s%2Fg%2F11np36y_xc?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D">
+                        <h3 class="h3-direccion" >Villa Nueva, Trujuy, Moreno, Buenos Aires 😎</h3>
                     </a>
                 </div>
             </div>
-        </div>
+        </section>
+    </main>
 
-    </header>
+    <footer>
+
+    </footer>
 </body>
 </html>
