@@ -1,5 +1,10 @@
+/*    esto va en la pc     */
+
+
 git add .
+git commit -m "Descripción de lo que cambiaste"
+git push origin master
 
-git commit -m "descripción del cambio"
+/*     esto va en enywhre     */
 
-git push
+git pull origin master
