@@ -10,6 +10,7 @@
     --color-secundario: rgb(230, 192, 255);
     --color-principal-01:  rgba(199, 140, 255, .9);
     --letra-body:  rgb(22, 22, 22);
+    --shadow-titulos: 2px 2px 5px rgba(255, 0, 0, 0.7);
 }
 
 
@@ -187,6 +188,7 @@ main{
 .h1-oportunidad{
     color: var(--color-principal-00);
     margin-bottom: 3%;
+    text-shadow: 2px 2px 5px rgba(17, 255, 0, 0.7);
 }
 
 .div-img-aparatos{
@@ -265,13 +267,54 @@ main{
 
 
 /***
-    SECTION_CONTACTO
+   -------- SECTION_CONTACTO ---------
 ***/
+
+
+.section.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.h1-contacto{
+    text-align: center;
+    color: var(--color-principal-00);
+    text-shadow: var(--shadow-titulos);
+}
+
+.div-whatsapp{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.img-whatsapp{
+    width: 50%;
+    height: auto;
+}
+
+.a-whatsapp{
+    text-decoration: none;
+    color: var(--color-principal-00);
+    width: 100%;
+    text-shadow: var(--shadow-titulos);
+}
+
 .div-me-puedes{
     display: flex;
     color: var(--color-principal-00);
     align-items: center;
     justify-content: center;
+}
+
+.h2-me-puedes{
+    color: var(--color-principal-00);
+    text-shadow: var(--shadow-titulos);
 }
 
 .div-ubicacion{
@@ -289,7 +332,6 @@ main{
     width: 40%;
     height: 60%;
     border-radius: 100%;
-    background-color: rgb(15, 143, 255);
     padding: 0;
     display: flex;
     justify-content: center;
@@ -300,12 +342,17 @@ main{
 .img-ubicacion{
     width: 100px;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .a-direccion{
     text-decoration: none;
     font-size: .8rem;
     color: var(--letra-body);
+    color: var(--color-principal-00);
+    text-shadow: var(--shadow-titulos);
 }
 
 .footer{
@@ -324,6 +371,10 @@ main{
 ***/
 
 @media (max-width: 1000px) and (orientation: landscape) {
+
+    .menu{
+        display: none !important;
+    }
 
     .div-img-logo{
         display: flex;
