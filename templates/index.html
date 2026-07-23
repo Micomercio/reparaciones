@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>QuedoComoNuevo</title>
     <link rel="stylesheet" href=" {{ url_for('static', filename='css/styles.css') }} ">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geomini:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/logo-icon.png') }}">
 </head>
 <body>
     <header class="header">
@@ -100,7 +101,7 @@
             <h1 class="h1-contacto">Contacto</h1>
             <div class="div-whatsapp">
                
-                <a class="a-whatsapp" id="what" href="https://wa.me/5491162689457?text=Hola%20buenos%20dias,%20Gabriel"  target="_blank" rel="noopener noreferrer">
+                <a class="a-whatsapp" id="what" href="https://wa.me/5491162689457?text=Hola%20buenos%20dias,%20Gabriel."  target="_blank" rel="noopener noreferrer">
                     <img class="img-whatsapp" for="what" src="{{ url_for('static', filename='img/whatsapp.png') }}" alt="">
                     <h2>11-6268-9457</h2>
                 </a>
@@ -131,6 +132,28 @@
     
     <footer class="footer">
         
+        <div class="div-desarrollador">
+            <div class="div-desarrollador-1">
+                <div class="div-img-nombre">
+                    <img class="img-desarrollador" src="{{ url_for('static', filename='img/gabriel-ponce.png') }}" alt="">
+                    <h4>Gabriel A. Ponce</h4>
+                    <div class="div-barra"></div>
+                    <div class="p-desarrollador">
+                    <p>Desarrollador de esta plataforma</p>
+                    <p>Diseño y desarrollo integral.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="div-derechos">
+            <p>
+                © 2026 Gabriel Ponce. Todos los derechos reservados. 
+                Queda prohibida la reproducción total o parcial de 
+                este sitio sin autorización del autor.
+            </p>
+
+        </div>
+
     </footer>
 </body>
 </html>
