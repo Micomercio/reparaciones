@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuedoComoNuevo</title>
+    <link rel="stylesheet" href=" {{ url_for('static', filename='css/styles.css') }} ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geomini:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/logo-icon.png') }}">
+</head>
+<body>
+    <header class="header">
+            <a class="div-titulo">
+                <h2 class="titulo">Quedo</h2>
+                <h2 class="titulo">Como</h2>
+                <h2 class="titulo">Nuevo</h2>
+            </a>
+
+            <div class="div-menu-2">
+                <nav class="menu-2">
+                    <ul><a href="/" class="a-menu-pati-2">Inicio</a></ul>
+                    <ul><a href="/" class="a-menu-pati-2">Informacion</a></ul>
+                    <ul><a href="" class="a-menu-pati-2">Trabajos</a></ul>
+                    <ul><a href="" class="a-menu-pati-2">Contactame</a></ul>
+                </nav>
+            </div>
+
+            <div class="div-pati">
+                <input type="checkbox" name="" id="menu-toggler">
+                <label class="btn-pati" for="menu-toggler" type="button">☰</label>
+
+                <nav class="menu">
+                    <ul><a href="/" class="a-menu-pati">Inicio</a></ul>
+                    <ul><a href="/" class="a-menu-pati">Informacion</a></ul>
+                    <ul><a href="" class="a-menu-pati">Trabajos</a></ul>
+                    <ul><a href="" class="a-menu-pati">Contactame</a></ul>
+                </nav>
+            </div>
+            
+    </header>
+
+    <main class="main-ende">
+        <img class="img-atencion" src="{{ url_for('static', filename='img/atencion.png') }}" alt="">
+        <h1>¡Atención!</h1>
+
+        <strong class="strong-00">⚠️ ¡Página en desarrollo!</strong>
+
+        <p>
+            Esta sección no se encuentra disponible por el momento.
+
+            Estoy trabajando intensamente en el desarrollo de este apartado para ofrecerte la mejor experiencia posible. Muy pronto vas a poder acceder a todas sus funcionalidades.
+
+            Pido disculpas por las molestias que esto pueda ocasionar e invito a volver a visitar esta paguina en breve. <br>
+
+            
+        </p>
+        <strong class="strong-01">¡Muchas gracias por visitar mi sitio!</strong>
+    </main>
+    
+    
+    <footer class="footer">
+        
+        <div class="div-desarrollador">
+            <div class="div-desarrollador-1">
+                <div class="div-img-nombre">
+                    <img class="img-desarrollador" src="{{ url_for('static', filename='img/Gabriel-ponce.png') }}" alt="">
+                    <h4>Gabriel A. Ponce</h4>
+                    <div class="div-barra"></div>
+                    <div class="p-desarrollador">
+                    <p>Desarrollador de esta plataforma</p>
+                    <p>Diseño y desarrollo integral.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="div-derechos">
+            <p>
+                © 2026 Gabriel Ponce. Todos los derechos reservados. 
+                Queda prohibida la reproducción total o parcial de 
+                este sitio sin autorización del autor.
+            </p>
+
+        </div>
+
+    </footer>
+</body>
+</html>
