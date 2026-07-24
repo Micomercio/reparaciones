@@ -14,7 +14,6 @@ cursor.execute("""
 conexion.commit()
 conexion.close
 
-
 app = Flask(__name__)
 
 @app.route("/")
